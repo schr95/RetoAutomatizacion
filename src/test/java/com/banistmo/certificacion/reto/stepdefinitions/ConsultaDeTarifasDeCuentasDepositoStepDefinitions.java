@@ -9,12 +9,17 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import questions.DocumentoAbierto;
 import userinterface.PaginaPrincipal;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
+import static net.serenitybdd.screenplay.questions.WebElementQuestion.the;
 import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
 import static userinterface.PaginaPrincipal.MENU;
+import static userinterface.Tarifario.ARCHIVO_ABIERTO;
 import static userinterface.Tarifario.LINK_DOCUMENTO;
 
 public class ConsultaDeTarifasDeCuentasDepositoStepDefinitions {
